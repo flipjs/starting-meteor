@@ -1,0 +1,19 @@
+<head>
+  <title>itemsApp</title>
+</head>
+
+<body>
+  {{> search}}
+  {{> items}}
+</body>
+
+<template name="search">
+	<input type="text">
+</template>
+
+<template name="items">
+<h1>Items</h1>
+{{#each items}}
+	<li>{{item}} | {{category}}</li>
+{{/each}}
+</template>
